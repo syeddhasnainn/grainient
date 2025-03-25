@@ -124,45 +124,48 @@ export default function Home() {
 
         <nav className=" bg-[#131516] p-4 ">
           <div className=" flex justify-between items-center max-w-[1260px] mx-auto">
-          <div className="font-bold">
-            <div className="flex items-center gap-2">
-              <img src="./images/logo.svg" alt="" />
-              <p className="text-lg">Grainient.</p>
+            <div className="font-bold">
+              <div className="flex items-center gap-2">
+                <img src="./images/logo.svg" alt="" />
+                <p className="text-lg">Grainient.</p>
+              </div>
             </div>
-          </div>
 
-          <div className="hidden md:block">
-            <div className="flex items-center justify-center gap-5">
-              <div>Collections</div>
-              <div>Pricing</div>
-              <div>Freebies</div>
-              <div>FAQ</div>
-              <div>Request</div>
+            <div className="hidden md:block">
+              <div className="flex items-center justify-center gap-5">
+                <div>Collections</div>
+                <div>Pricing</div>
+                <div>Freebies</div>
+                <div>FAQ</div>
+                <div>Request</div>
+              </div>
+            </div>
+            <div>
+              <MenuIcon />
+              <div className="hidden md:block space-x-2">
+                <button className="font-semibold bg-white  rounded-[10px] px-3 py-2 text-black ">
+                  <div className="flex items-center gap-2 ">
+                    <img className="" src="./images/user.svg" alt="" />
+                    <span className="font-bold">Sign in</span>
+                  </div>
+                </button>
+                <button className="font-semibold bg-[#C2F13C] rounded-[10px] px-3 py-2 text-black ">
+                  <div className="flex items-center gap-2 ">
+                    <img
+                      className=""
+                      src="./images/hero-lightning.svg"
+                      alt=""
+                    />
+                    <span className="font-bold">Go Unlimited</span>
+                  </div>
+                </button>
+              </div>
             </div>
           </div>
-          <div>
-            <MenuIcon />
-            <div className="hidden md:block space-x-2">
-              <button className="font-semibold bg-white  rounded-[10px] px-3 py-2 text-black ">
-                <div className="flex items-center gap-2 ">
-                  <img className="" src="./images/user.svg" alt="" />
-                  <span className="font-bold">Sign in</span>
-                </div>
-              </button>
-              <button className="font-semibold bg-[#C2F13C] rounded-[10px] px-3 py-2 text-black ">
-                <div className="flex items-center gap-2 ">
-                  <img className="" src="./images/hero-lightning.svg" alt="" />
-                  <span className="font-bold">Go Unlimited</span>
-                </div>
-              </button>
-            </div>
-          </div>
-          </div>
-          
         </nav>
       </div>
       <div className="">
-        <section className=" bg-[url(./images/moon.png)] bg-cover bg-center ">
+        <section className=" bg-[url(/images/moon.png)] bg-cover bg-center ">
           <div className="flex items-center justify-center min-h-screen ">
             <div className="flex flex-col items-center gap-4">
               <div className="text-sm border rounded-full border-white/10 px-3 py-1 md:text-base">
@@ -534,7 +537,15 @@ export default function Home() {
                   designers and startup creatives.
                 </p>
                 <p className="text-xs md:text-sm text-lightgray max-w-xs font-medium">
-                  Developed by <a href="https://x.com/syeddhasnainn" target="_blank" rel="noopener noreferrer" className="text-white">Hasnain</a>
+                  Developed by{" "}
+                  <a
+                    href="https://x.com/syeddhasnainn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white"
+                  >
+                    Hasnain
+                  </a>
                 </p>
               </div>
               <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
