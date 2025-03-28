@@ -12,10 +12,6 @@ html,
 body {
   @apply bg-black ;
   font-family: 'Geist', sans-serif ;
-  
-
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
+  @apply text-white;
 
 }
