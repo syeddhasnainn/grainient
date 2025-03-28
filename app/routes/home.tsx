@@ -1,4 +1,3 @@
-import { url } from "inspector";
 import type { Route } from "./+types/home";
 
 export function meta({}: Route.MetaArgs) {
@@ -30,8 +29,9 @@ const PopularCollectionCard = ({ title, item, url }: any) => {
     <div
       style={{
         backgroundImage: `url(/images/${url})`,
-        backgroundSize: "120%",
+        backgroundSize: "cover",
         backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
       }}
       className="border-2 border-gray-500/20 rounded-[10px] p-5 flex items-end h-[300px] "
     >
@@ -87,18 +87,14 @@ const MenuIcon = () => {
     >
       <g
         fill="#c2f13c"
-        fill-rule="nonzero"
+        fillRule="nonzero"
         stroke="none"
-        stroke-width="1"
-        stroke-linecap="butt"
-        stroke-linejoin="miter"
-        stroke-miterlimit="10"
-        stroke-dasharray=""
-        stroke-dashoffset="0"
-        font-family="none"
-        font-weight="none"
-        font-size="none"
-        text-anchor="none"
+        strokeWidth="1"
+        strokeLinecap="butt"
+        strokeLinejoin="miter"
+        strokeMiterlimit="10"
+        strokeDasharray=""
+        strokeDashoffset="0"
         style={{ mixBlendMode: "normal" }}
       >
         <g transform="scale(8.53333,8.53333)">
@@ -493,10 +489,11 @@ export default function Home() {
             <section
               style={{
                 backgroundImage: `url(/images/pop-4.jpeg)`,
-                backgroundSize: "120%",
+                backgroundSize: "auto",
+                backgroundRepeat: "no-repeat",
                 backgroundPosition: "center",
               }}
-              className="px-5 py-10 md:p-20 space-y-8 my-48 border border-white/20 rounded-3xl bg-cover bg-bottom"
+              className="px-5 py-10 md:p-20 space-y-8 my-48 border border-white/20 rounded-3xl bg-cover bg-center"
             >
               <div className="space-y-2">
                 <div className="text-[20px] md:text-3xl font-semibold">
